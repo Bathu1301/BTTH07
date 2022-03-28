@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
     function checkUserId(){
@@ -11,6 +10,16 @@ $(document).ready(function(){
         return false
     }
 
+    function checkName(){
+
+        let Name = $('#txtName').val();
+        let NameRegex = /^[a-zA-Z0-9]$/;
+        if(NameRegex.test(Name)){
+            return true
+        }
+        return false
+    }
+
     function checkEmail(){
         let email = $('#txtEmail').val();
         if(email.includes('@')){
@@ -18,6 +27,14 @@ $(document).ready(function(){
         }
         return false
     }
+
+    /*function checkCountry(){
+        let Country = $('#txtCountry').val();
+        if(country.includes('@')){
+            return true
+        }
+        return false
+    }*/
 
     function checkPassword(){
         let password = $('#txtPassword').val();
@@ -55,6 +72,14 @@ $(document).ready(function(){
             $("#statusOfEmail").css('color','red')
         }
 
+        if(checkName()){
+            $("#statusOfName").text('Tên hợp lệ')
+            $("#statusOfName").css('color','blue')
+        }
+        else{
+            $("#statusOfName").text('Tên không hợp lệ')
+            $("#statusOfName").css('color','red')
+        }
     })
 
 

@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <form action="">
+    <form action /*style="
+    width: 450px;
+    margin: 30px auto 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(45 35 66 / 30%) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+"*/>
         <h1 style="text-align: left;">Registration Form</h1>
         <table>
             <tr>
@@ -46,9 +59,10 @@
                 <td>Country:</td> 
         
                  <td>
-                    <select name="txtCountry" id="txtCountry" value="(Please select a country)">
+                    <select name="txtCountry" id="txtCountry">
+                     <option value="(Please select a country)" disabled selected>(Please select a country)</option>
                      <option value="Afganistan">Afghanistan</option>
-                    value="American Samoa">American Samoa</option>
+                     <option value="American Samoa">American Samoa</option>
                      <option value="Andorra">Andorra</option>
                      <option value="Angola">Angola</option>
                      <option value="Anguilla">Anguilla</option>
