@@ -11,9 +11,13 @@ form{
 }
 
 #btnRegister{
+    text-align: center;
     margin: 30px auto 0 auto;
     display: flex;
-  justify-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 93px;
 }
 #txtAbout{
     width: 230px;

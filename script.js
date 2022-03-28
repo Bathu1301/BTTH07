@@ -9,11 +9,15 @@ $(document).ready(function(){
         }
         return false
     }
-
+    let userID = document.querySelector('#txtUserID')
+    userID.onmouseover = () =>{
+        txtuserID.innerText="Bạn chưa nhập userID"
+    }
+    
     function checkName(){
 
         let Name = $('#txtName').val();
-        let NameRegex = /^[a-zA-Z0-9]$/;
+        let NameRegex = /^[a-zA-Z0-9]/;
         if(NameRegex.test(Name)){
             return true
         }
